@@ -22,6 +22,7 @@ async function loadDepartamentos() {
     departamentos.push(
       new Feature({
         geometry: new Polygon(feature.geometry.coordinates),
+        id: feature.id,
         properties: feature.properties,
         vecinos: feature.vecinos,
       })
@@ -38,7 +39,7 @@ function departamentoStyle(color) {
     }),
 
     fill: new Fill({
-      color: 'black', // se supone que cambia con la funcion
+      color: color, // se supone que cambia con la funcion
     }),
   });
 }
@@ -46,24 +47,19 @@ function departamentoStyle(color) {
 
 // no se usa aún
 function esAdyacente(departamento1, departamento2) {
-  return departamento2.get('vecinos').includes(departamento1.get('nombre'));
+  return departamento2.get('vecinos').includes(departamento1.get('properties')['nombre']);
 }
 
 // logica para lo de los vecinos (guarda un array con cada id de cada depto y su color)
 function colorearDepartamentos(departamentos) {
   const coloresAsignados = {};
 
-  departamentos.forEach((departamento) => {
-    const vecinos = departamento.get('vecinos');
-    for (let color of coloresDisponibles) {
-
-      if (!vecinos.some((vecino) => coloresAsignados.hasOwnProperty(vecino) && coloresAsignados[vecino] === color)) {
-        coloresAsignados[departamento.get('id')] = color;
-        console.log({ coloresAsignados });
-        break;
-      }
-    }
-  });
+  let i = 0;
+  for (let index = 0; index < departamentos.length; index++) {
+    const departamento = departamentos[index];
+    coloresAsignados[departamento.get('id')] = coloresDisponibles[i];
+    i = (i + 1) % 4;
+  }
   return coloresAsignados;
 }
 
@@ -75,8 +71,9 @@ loadDepartamentos().then(() => {
   const departamentosLayer = new VectorLayer({
     source: new Vector({ features: departamentos }),
     style: (feature) => {
+      console.log(feature);
       // se usa el color que se calculo en el metodo de colorear
-      const color = coloresAsignados[feature.getId()];
+      const color = coloresAsignados[feature.get('id')];
       return departamentoStyle(color);
     },
 
