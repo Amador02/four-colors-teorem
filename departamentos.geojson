@@ -6,7 +6,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "18",
-                "DPTO_CNMBR": "CAQUET\u00c1",
+                "DPTO_CNMBR": "CAQUETA",
                 "DPTO_NANO_": 1981,
                 "DPTO_CACTO": "Ley 78 del 29 de Diciembre de 1981",
                 "DPTO_NANO": 2018,
@@ -15,7 +15,7 @@
             },
             "vecinos": [
                 "GUAVIARE",
-                "VAUP\u00e9S",
+                "VAUPES",
                 "AMAZONAS",
                 "PUTUMAYO",
                 "CAUCA",
@@ -573,10 +573,10 @@
             "vecinos": [
                 "VALLE DEL CAUCA",
                 "TOLIMA",
-                "HU\u00cdLA",
-                "CAQUET\u00c1",
+                "HUILA",
+                "CAQUETA",
                 "PUTUMAYO",
-                "NARI\u00d1O"
+                "NARINO"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -955,10 +955,10 @@
                 "Shape_Area": 2.10796483335
             },
             "vecinos": [
-                "CAQUET\u00c1",
+                "CAQUETA",
                 "AMAZONAS",
                 "CAUCA",
-                "NARI\u00d1O"
+                "NARINO"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -1297,7 +1297,7 @@
                 "Shape_Area": 1.67948659104
             },
             "vecinos": [
-                "CHOC\u00d3",
+                "CHOCO",
                 "RISARALDA",
                 "QUINDIO",
                 "TOLIMA",
@@ -1620,7 +1620,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "94",
-                "DPTO_CNMBR": "GUAIN\u00cdA",
+                "DPTO_CNMBR": "GUAINIA",
                 "DPTO_NANO_": 1991,
                 "DPTO_CACTO": "Articulo 309 Constitucion Politica de 1991",
                 "DPTO_NANO": 2018,
@@ -1630,7 +1630,7 @@
             "vecinos": [
                 "VICHADA",
                 "GUAVIARE",
-                "VAUP\u00c9S"
+                "VAUPES"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -2152,7 +2152,7 @@
                 "ARAUCA",
                 "CASANARE",
                 "META",
-                "GUAIN\u00cdA",
+                "GUAINIA",
                 "GUAVIARE"
             ],
             "geometry": {
@@ -2576,7 +2576,7 @@
                 "Shape_Area": 3.61506314804
             },
             "vecinos": [
-                "BOYAC\u00c1",
+                "BOYACA",
                 "ARAUCA",
                 "VICHADA",
                 "META",
@@ -2923,8 +2923,8 @@
                 "Shape_Area": 8.87747998889
             },
             "vecinos": [
-                "VAUP\u00c9S",
-                "CAQUET\u00c1",
+                "VAUPES",
+                "CAQUETA",
                 "PUTUMAYO"
             ],
             "geometry": {
@@ -3532,7 +3532,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "97",
-                "DPTO_CNMBR": "VAUP\u00c9S",
+                "DPTO_CNMBR": "VAUPES",
                 "DPTO_NANO_": 1991,
                 "DPTO_CACTO": "Articulo 309 Constitucion Politica de 1991",
                 "DPTO_NANO": 2018,
@@ -3541,8 +3541,8 @@
             },
             "vecinos": [
                 "GUAVIARE",
-                "GUAIN\u00cdA",
-                "CAQUET\u00c1",
+                "GUAINIA",
+                "CAQUETA",
                 "AMAZONAS"
             ],
             "geometry": {
@@ -3980,9 +3980,9 @@
             "vecinos": [
                 "META",
                 "VICHADA",
-                "GUAIN\u00cdA",
-                "VAUP\u00c9S",
-                "CAQUET\u00c1"
+                "GUAINIA",
+                "VAUPES",
+                "CAQUETA"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -4374,10 +4374,11 @@
             },
             "vecinos": [
                 "CUNDINAMARCA",
-                "BOYAC\u00c1",
+                "BOYACA",
                 "ANTIOQUIA",
                 "RISARALDA",
-                "TOLIMA"
+                "TOLIMA",
+                "TUNJA"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -4697,7 +4698,7 @@
                 "TOLIMA",
                 "QUINDIO",
                 "VALLE DEL CAUCA",
-                "CHOC\u00d3",
+                "CHOCO",
                 "ANTIOQUIA"
             ],
             "geometry": {
@@ -4854,12 +4855,12 @@
             },
             "vecinos": [
                 "CORDOBA",
-                "BOL\u00cdVAR",
+                "BOLIVAR",
                 "SANTANDER",
-                "BOYAC\u00c1",
+                "BOYACA",
                 "CALDAS",
                 "RISARALDA",
-                "CHOC\u00d3"
+                "CHOCO"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -5402,7 +5403,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "27",
-                "DPTO_CNMBR": "CHOC\u00d3",
+                "DPTO_CNMBR": "CHOCO",
                 "DPTO_NANO_": 1947,
                 "DPTO_CACTO": "Ley 13 del 3 de Noviembre de 1947",
                 "DPTO_NANO": 2018,
@@ -5907,7 +5908,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "52",
-                "DPTO_CNMBR": "NARI\u00d1O",
+                "DPTO_CNMBR": "NARINO",
                 "DPTO_NANO_": 1904,
                 "DPTO_CACTO": "Ley 1 de 1904",
                 "DPTO_NANO": 2018,
@@ -6215,7 +6216,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "23",
-                "DPTO_CNMBR": "C\u00d3RDOBA",
+                "DPTO_CNMBR": "CORDOBA",
                 "DPTO_NANO_": 1951,
                 "DPTO_CACTO": "Ley 9 del 18 de Diciembre de 1951",
                 "DPTO_NANO": 2018,
@@ -6225,7 +6226,7 @@
             "vecinos": [
                 "SUCRE",
                 "ANTIOQUIA",
-                "BOL\u00cdVAR"
+                "BOLIVAR"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -6476,7 +6477,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "13",
-                "DPTO_CNMBR": "BOL\u00cdVAR",
+                "DPTO_CNMBR": "BOLIVAR",
                 "DPTO_NANO_": 1886,
                 "DPTO_CACTO": "Constitucion Politica de 1886",
                 "DPTO_NANO": 2018,
@@ -6489,7 +6490,7 @@
                 "CESAR",
                 "SANTANDER",
                 "MAGDALENA",
-                "ATL\u00c1NTICO",
+                "ATLANTICO",
                 "ANTIOQUIA"
             ],
             "geometry": {
@@ -6885,7 +6886,7 @@
                 "LA GUAJIRA",
                 "NORTE DE SANTANDER",
                 "SANTANDER",
-                "BOL\u00cdVAR"
+                "BOLIVAR"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -7498,8 +7499,8 @@
             "vecinos": [
                 "LA GUAJIRA",
                 "CESAR",
-                "BOL\u00cdVAR",
-                "ATL\u00c1NTICO"
+                "BOLIVAR",
+                "ATLANTICO"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -7802,7 +7803,7 @@
                 "Shape_Area": 0.870810348998
             },
             "vecinos": [
-                "BOL\u00cdVAR",
+                "BOLIVAR",
                 "CORDOBA"
             ],
             "geometry": {
@@ -8018,7 +8019,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "88",
-                "DPTO_CNMBR": "ARCHIPI\u00c9LAGO DE SAN ANDR\u00c9S, PROVIDENCIA Y SANTA CATALINA",
+                "DPTO_CNMBR": "ARCHIPIELAGO DE SAN ANDRES Y PROVIDENCIA",
                 "DPTO_NANO_": 1991,
                 "DPTO_CACTO": "Art\u00edculo 310 Constitucion Politica de 1991",
                 "DPTO_NANO": 2018,
@@ -8067,7 +8068,7 @@
                 "Shape_Area": 1.94415690405
             },
             "vecinos": [
-                "BOYAC\u00c1",
+                "BOYACA",
                 "CASANARE",
                 "VICHADA"
             ],
@@ -8312,7 +8313,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "15",
-                "DPTO_CNMBR": "BOYAC\u00c1",
+                "DPTO_CNMBR": "BOYACA",
                 "DPTO_NANO_": 1886,
                 "DPTO_CACTO": "Constitucion Politica de 1886",
                 "DPTO_NANO": 2018,
@@ -8777,10 +8778,10 @@
                 "Shape_Area": 1.82363113268
             },
             "vecinos": [
-                "BOGOT\u00c1 D.C.",
+                "BOGOTA, D.C.",
                 "META",
                 "CASANARE",
-                "BOYAC\u00c1",
+                "BOYACA",
                 "CALDAS",
                 "TOLIMA",
                 "HUILA"
@@ -9148,7 +9149,7 @@
             "vecinos": [
                 "CESAR",
                 "SANTANDER",
-                "BOYAC\u00c1"
+                "BOYACA"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -9463,7 +9464,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "11",
-                "DPTO_CNMBR": "BOGOT\u00c1, D.C.",
+                "DPTO_CNMBR": "BOGOTA, D.C.",
                 "DPTO_NANO_": 1538,
                 "DPTO_CACTO": "Constitucion Politica de 1886",
                 "DPTO_NANO": 2018,
@@ -9584,9 +9585,9 @@
                 "CASANARE",
                 "VICHADA",
                 "GUAVIARE",
-                "CAQUET\u00c1",
+                "CAQUETA",
                 "HUILA",
-                "BOGOT\u00c1 D.C."
+                "BOGOTA, D.C."
             ],
             "geometry": {
                 "type": "Polygon",
@@ -10026,11 +10027,12 @@
             },
             "vecinos": [
                 "CAUCA",
-                "CAQUET\u00c1",
+                "CAQUETA",
                 "META",
-                "BOGOT\u00c1 D.C.",
+                "BOGOTA",
                 "CUNDINAMARCA",
-                "TOLIMA"
+                "TOLIMA",
+                "BOGOTA, D.C."
             ],
             "geometry": {
                 "type": "Polygon",
@@ -10347,9 +10349,9 @@
             "vecinos": [
                 "CESAR",
                 "NORTE DE SANTANDER",
-                "BOYAC\u00c1",
+                "BOYACA",
                 "ANTIOQUIA",
-                "BOL\u00cdVAR"
+                "BOLIVAR"
             ],
             "geometry": {
                 "type": "Polygon",
@@ -11001,7 +11003,7 @@
             "type": "Feature",
             "properties": {
                 "DPTO_CCDGO": "08",
-                "DPTO_CNMBR": "ATL\u00c1NTICO",
+                "DPTO_CNMBR": "ATLANTICO",
                 "DPTO_NANO_": 1910,
                 "DPTO_CACTO": "Ley 21 de 1910",
                 "DPTO_NANO": 2018,
@@ -11010,7 +11012,7 @@
             },
             "vecinos": [
                 "MAGDALENA",
-                "BOL\u00cdVAR"
+                "BOLIVAR"
             ],
             "geometry": {
                 "type": "Polygon",

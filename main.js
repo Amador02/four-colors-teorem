@@ -39,47 +39,63 @@ function departamentoStyle(color) {
     }),
 
     fill: new Fill({
-      color: color, // se supone que cambia con la funcion
+      color: color,
     }),
   });
 }
 
+function colorearDepartamentos(departamentos, n) {
+  // ordena los nodos de mayor a menor grado
+  const nuevosDeptos = departamentos.sort((dept1, dept2) =>
+    dept2.get('vecinos').length - dept1.get('vecinos').length)
 
-// no se usa aún
-function esAdyacente(departamento1, departamento2) {
-  return departamento2.get('vecinos').includes(departamento1.get('properties')['nombre']);
-}
-
-// logica para lo de los vecinos (guarda un array con cada id de cada depto y su color)
-function colorearDepartamentos(departamentos) {
   const coloresAsignados = {};
 
-  let i = 0;
-  for (let index = 0; index < departamentos.length; index++) {
-    const departamento = departamentos[index];
-    coloresAsignados[departamento.get('id')] = coloresDisponibles[i];
-    i = (i + 1) % 4;
+  // recorre n veces por diferentes colores para pintar el mapa completo
+  for (let i = 0; i < n; i++) {
+
+    // recorrre cada departamento para elegir los que no tengan vecinos con el color seleccionado
+    for (let index = 0; index < nuevosDeptos.length; index++) {
+      const depto = nuevosDeptos[index];
+      // si no se encuentra asignado el color con el id del depto y los vecinos no tienen el color seleccionado
+      if (!coloresAsignados[depto.get('id')] && verificarVecinos(depto, coloresAsignados, coloresDisponibles[i])) {
+        // se asigna el color
+        coloresAsignados[depto.get('id')] = coloresDisponibles[i];
+      }
+    }
   }
   return coloresAsignados;
 }
-
-
-
+// verifica si hay vecinos con el mismo color que el departamento
+function verificarVecinos(depto, coloresAsign, color) {
+  const vecinos = depto.get('vecinos');
+  for (let index = 0; index < vecinos.length; index++) {
+    const otroDepto = departamentos.find(depto => depto.get('properties')['DPTO_CNMBR'] == vecinos[index]);
+    // retorna false si se encuentra un vecino con el mismo color que se busca
+    if (otroDepto && color == coloresAsign[otroDepto.get('id')])
+      return false;
+  }
+  return true;
+}
 loadDepartamentos().then(() => {
+  for (let i = 0; i < 5; i++)
+    cargarMapa(i);
+});
 
-  const coloresAsignados = colorearDepartamentos(departamentos.slice());
-  const departamentosLayer = new VectorLayer({
+
+// usa 4 colores 
+const coloresDisponibles = ["#ff0000", "#00ff00", "#0000ff", "#ffff00"];
+
+function cargarMapa(num) {
+  const coloresAsignados = colorearDepartamentos(departamentos.slice(), num);
+  var departamentosLayer = new VectorLayer({
     source: new Vector({ features: departamentos }),
     style: (feature) => {
-      console.log(feature);
       // se usa el color que se calculo en el metodo de colorear
       const color = coloresAsignados[feature.get('id')];
       return departamentoStyle(color);
     },
-
   });
-
-
 
   const map = new Map({
     target: 'map',
@@ -89,10 +105,10 @@ loadDepartamentos().then(() => {
         source: new OSM(),
       }),
       // capa colores
-      departamentosLayer],
+      departamentosLayer
+    ],
 
     view: new View({
-
       // ubica en colombia (no sirve si no se pone useGeographic() al inicio)
       center: [-74.24, 4.59],
       zoom: 6,
@@ -100,11 +116,5 @@ loadDepartamentos().then(() => {
   });
 
   departamentosLayer.setOpacity(0.5);
-
   map.render('map');
-
-});
-
-
-// usa 4 colores 
-const coloresDisponibles = ["#ff0000", "#00ff00", "#0000ff", "#ffff00"];
+}
